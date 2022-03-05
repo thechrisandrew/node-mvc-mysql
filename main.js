@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Application Routes
 app.use("/", require("./routes/mainRoute"));
-app.use("/items", require("./routes/itemRoute"));
+app.use("/", require("./routes/itemRoute"));
 
 // 404 Page Route
 app.use((req, res) => {
