@@ -17,7 +17,7 @@ module.exports = {
 		res.send("NOT IMPLEMENTED: Item detail: " + req.params.id);
 	},
 	// Handle Item create on POST.
-	item_create_post: (req, res) => {
+	item_create_post: async (req, res) => {
 		// res.send("NOT IMPLEMENTED: Item create POST");
 		// dummy data
 		const data = {
